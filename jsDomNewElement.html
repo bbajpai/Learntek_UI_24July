@@ -1,0 +1,83 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>
+			JS Basics Topic
+		</title>
+		<style>
+			#box1{
+				width:300px;
+				height:300px;
+				background-color: green;
+			}
+		</style>
+	</head>
+	<body>
+
+		<p id="para1"> Hi !!! i am a paragraph</p> 
+		<div id="box1">
+			<p id="p1">Para 1</p>
+			<p id="p2">Para 2</p>
+		</div>
+
+		<input type="email" maxlength="7">
+
+		<button type="button" onclick="changeText()"> Change Style of text</button>
+
+
+
+		<script>
+			//debugger;
+			//"use strict"
+			var age = 5;
+			var num; // decleration
+			num = 10;// defination // var num = 10
+			var para1 = document.getElementById("para1");
+			var container = document.getElementById("box1");
+			var p1 = document.getElementById("p1");
+			var p2 = document.getElementById("p2");
+ 			var para = document.createElement("p"); //<p></p>
+ 			var textNode = document.createTextNode("This is a para added using javascript");
+ 			para.appendChild(textNode);// <p>This is a para added using javascript
+
+ 			container.insertBefore(para,p2);
+ 			container.removeChild(p1);
+
+
+			function changeText(){
+				para.style.color ="white";
+				para.style.background ="red";
+				para.style.fontSize ="30px";
+				para.innerHTML ="This is new text";
+				para1.innerHTML ="hello"
+			}
+
+			var data;
+			data ="something"
+			var month;
+			var day;
+
+			var dummy = "asaa"
+			var currentDate = new Date();
+			para1.innerHTML = currentDate.getDay();
+			/*switch(currentDate.getDay()){
+				case 1 :
+					month = 'JAN';
+					day ="monday"
+				break;
+				case 2 :
+					month = "FEB";
+					day="tuesday"
+					break;
+				case 3 :
+					month="MAR";
+					break;
+				default:
+					month ="Not Found"
+			}
+			*/
+			
+		</script>
+		
+	</body>
+</html>

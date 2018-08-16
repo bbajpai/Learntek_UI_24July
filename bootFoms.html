@@ -1,0 +1,84 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>
+			Bootstrap Basics
+		</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<form>
+						<div class="form-group">
+							<label>First Name</label>
+							<input type="text" name="fName" class="form-control">
+						</div>
+						<div class="form-group">
+							<label>Email</label>
+							<input type="email" name="email" class="form-control">
+						</div>
+						<div class="form-group">
+							<label>Password</label>
+							<input type="password" name="pass" class="form-control">
+						</div>
+						<label>Gender</label>
+						<div class="radio">
+							<label>
+								<input type="radio" name="gender" value="male">Male
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="gender" value="female">Female
+							</label>
+						</div>
+						<label>Choose Location</label>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> Delhi
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> NCR
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> Mumbai
+							</label>
+						</div>
+						<div class="form-group">
+							<label>Select Country</label>
+							<select class="form-control">
+								<option>India</option>
+								<option>USA</option>
+								<option>UK</option>
+
+							</select>
+						</div>
+						<div class="form-group">
+							<label>Feedback</label>
+							<textarea class="form-control" row="8"></textarea>
+						</div>
+
+						<button type="submit" class="btn btn-success btn-block">Submit</button>
+					</form>
+				</div>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>

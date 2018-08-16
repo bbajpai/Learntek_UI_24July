@@ -1,0 +1,31 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>
+			JQuery Basics Topic
+		</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+
+		<p id="para1"> Hi !!! i am a paragraph</p> 
+		<p class="dummy"> Hiii,,, This is para 2</p>
+		<p class="dummy">Hello this is para 3</p>
+
+
+		<button type="button"> Hide Para</button>
+
+		<script>
+			
+			
+			$(document).ready(function(){
+				//$(selector).action()
+
+				$("button").click(function(){
+					$(".dummy").hide();
+				});
+			});
+		</script>
+		
+	</body>
+</html>

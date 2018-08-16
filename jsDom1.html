@@ -1,0 +1,49 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>
+			JS Basics Topic
+		</title>
+	</head>
+	<body>
+
+		<p id="para1"> Hi !!! i am a paragraph</p> 
+
+
+		<button type="button"> Change Style of text</button>
+
+		
+		<!-- <div class="div2">hfjfe</div>
+		<p>Second Para</p>
+		<img id="myImage" src="Jellyfish.jpg">
+		<div class="div2"> Some data of div 2</div> -->
+
+
+
+
+		<script>
+			debugger;
+			var para = document.getElementById("para1");
+			/*para.align="right";*/
+			//var divdata = document.getElementById("div1")
+
+			para.style.color="white";
+			para.style.fontSize ="30px";
+			para.style.backgroundColor ="red"
+			var divdata = document.getElementsByClassName("div2");
+
+			var tagData = document.getElementsByTagName("p");
+
+			var image = document.getElementById("myImage");
+
+			image.src="Tulips.jpg"
+			image.width="300"
+
+			tagData[1].innerHTML = "New data inside para";
+			divdata[1].innerHTML ="data changed";
+
+			//para.innerHTML =" Hi I am changed by javacript";
+		</script>
+		
+	</body>
+</html>

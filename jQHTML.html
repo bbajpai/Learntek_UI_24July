@@ -1,0 +1,80 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>
+			JQuery Basics Topic
+		</title>
+		<style>
+			#panel{
+				width:300px;
+				height: 50px;
+				background-color: #0BA7B3;
+				color:white;
+				font-size:28px;
+				text-align: center;
+			}
+			#box{
+				width:300px;
+				height:300px;
+				background-color: #4a7729;
+				display: none;
+			}
+
+			.stylePara{
+				color:white;
+				background-color: green;
+				font-size:30px;
+				text-align: center;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<p id="dummy" class="stylePara">Hello this is para 3</p>
+			<div id="panel">Click to Open Div</div>
+			<div id="box"></div>
+
+		</div>
+		
+
+		<button type="button" id="getText"> Get Text</button>
+		<button type="button" id="getAttr"> Get Attribute</button>
+		<button type="button" id="toggleBtn"> Toggle Div</button>
+		<button type="button" id="addText">Add text</button>
+		<button type="button" id="addStyle">Add Style</button>
+		<button type="button" id="removeStyle">Remove Style</button>
+		<button type="button" id="toggleStyle">Toggle Style</button>
+
+		<script>
+			
+			
+			$(document).ready(function(){
+				//$(selector).action()
+				$("#getText").click(function(){
+					alert("Text ::"+ $("#dummy").html());
+				});
+
+				$("#getAttr").click(function(){
+					alert("Attribute is :: "+ $("#dummy").attr("align"));
+				});
+
+				$("#addText").click(function(){
+					$("#dummy").before("<b>added at end</b>");
+				});
+
+				$("#addStyle").click(function(){
+					$("#dummy").css("text-decoration","underline");
+				});
+				$("#removeStyle").click(function(){
+					$("#dummy").removeClass("stylePara");
+				});
+				$("#toggleStyle").click(function(){
+					$("#dummy").toggleClass("stylePara");
+				});
+				
+			});
+		</script>
+		
+	</body>
+</html>

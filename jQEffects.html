@@ -1,0 +1,64 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>
+			JQuery Basics Topic
+		</title>
+		<style>
+			#panel{
+				width:300px;
+				height: 50px;
+				background-color: #0BA7B3;
+				color:white;
+				font-size:28px;
+				text-align: center;
+			}
+			#box{
+				width:300px;
+				height:300px;
+				background-color: #4a7729;
+				display: none;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<p id="dummy">Hello this is para 3</p>
+		<div id="panel">Click to Open Div</div>
+		<div id="box"></div>
+
+
+		<button type="button" id="hideBtn"> Hide Div</button>
+		<button type="button" id="showBtn"> Show Div</button>
+		<button type="button" id="toggleBtn"> Toggle Div</button>
+
+
+		<script>
+			
+			
+			$(document).ready(function(){
+				//$(selector).action()
+
+
+				$("#panel").click(function(){
+					$("#box").slideToggle(3000);
+				});
+
+
+				$("#hideBtn").click(function(){
+					$("#box").fadeOut(5000);
+				});
+				$("#showBtn").click(function(){
+					$("#box").fadeIn(5000);
+				});
+
+				$("#toggleBtn").click(function(){
+					$("#box").fadeToggle(3000);
+				});
+
+				
+			});
+		</script>
+		
+	</body>
+</html>

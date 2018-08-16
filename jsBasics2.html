@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>
+			JS Basics Topic
+		</title>
+	</head>
+	<body>
+		<script>
+			var names = ['Ratna', 20, 'Kavita','ABc', 'XYZ'];
+			var age =[20,23,24,26];
+
+			var newArray = names.concat(age);
+			names.push("Hello");
+			names.push("Hii");
+			names.pop();
+			names.pop();
+			names.shift();
+			names.unshift("welcome");
+			names[1] = "New Value";
+			delete names[1];
+			var len = names.length;
+			console.log("Access element at 3rd location :: "+ names);
+			console.log("Length of array is :: " +len);
+			console.log("New array is :: "+ newArray);
+		</script>
+		
+	</body>
+</html>
